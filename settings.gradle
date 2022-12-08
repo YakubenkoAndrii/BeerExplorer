@@ -1,0 +1,27 @@
+pluginManagement {
+    repositories {
+        gradlePluginPortal()
+        google()
+        mavenCentral()
+    }
+}
+dependencyResolutionManagement {
+    repositoriesMode.set(RepositoriesMode.FAIL_ON_PROJECT_REPOS)
+    repositories {
+        google()
+        mavenCentral()
+    }
+}
+rootProject.name = "BeerExplorer"
+include ':app'
+include ':core'
+include ':core-ui'
+include ':onboarding'
+include ':onboarding:onboarding_presentation'
+include ':onboarding:onboarding_domain'
+include ':beer-guide'
+include ':beer-guide:beer-guide_presentation'
+include ':beer-guide:beer-guide_data'
+include ':beer-guide:beer-guide_domain'
+include ':onboarding:onboarding_data'
+include ':testing'

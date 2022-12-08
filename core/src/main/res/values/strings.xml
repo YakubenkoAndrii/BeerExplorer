@@ -1,0 +1,8 @@
+<resources>
+    <string name="app_name">BeerExplorer</string>
+
+    <string name="beer_abv">Beer abv: %1$s \%%</string>
+    <string name="beer_list_empty_message">Sorry, we couldn\'t find any beer :( Try again later</string>
+    <string name="beer_pairing_notes">Pairing better with: %1$s</string>
+    <string name="finish">Finish</string>
+</resources>
