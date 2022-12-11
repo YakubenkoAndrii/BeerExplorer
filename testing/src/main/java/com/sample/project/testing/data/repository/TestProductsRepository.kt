@@ -8,7 +8,7 @@ import kotlinx.coroutines.flow.*
 class TestProductsRepository : ProductsRepository {
 
     /**
-     * The backing hot flow for the list of author ids for testing.
+     * The backing hot flow for the list of beers for testing.
      */
     private val beerItemsFlow: MutableSharedFlow<List<Beer>> =
         MutableSharedFlow(replay = 1, onBufferOverflow = BufferOverflow.DROP_OLDEST)
@@ -20,7 +20,7 @@ class TestProductsRepository : ProductsRepository {
     }
 
     /**
-     * A test-only API to allow controlling the list of authors from tests.
+     * A test-only API to allow controlling the list of beers from tests.
      */
     fun sendBeerItems(beers: List<Beer>) {
         beerItemsFlow.tryEmit(beers)

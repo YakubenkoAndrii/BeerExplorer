@@ -9,7 +9,7 @@ import kotlinx.coroutines.flow.MutableSharedFlow
 class TestOnboardingRepository : OnboardingRepository {
 
     /**
-     * The backing hot flow for the list of author ids for testing.
+     * The backing hot flow for the list of onboarding screens for testing.
      */
     private val onboardingScreensFlow: MutableSharedFlow<List<OnboardingItem>> =
         MutableSharedFlow(replay = 1, onBufferOverflow = BufferOverflow.DROP_OLDEST)
@@ -23,7 +23,7 @@ class TestOnboardingRepository : OnboardingRepository {
     }
 
     /**
-     * A test-only API to allow controlling the list of authors from tests.
+     * A test-only API to allow controlling the list of onboarding screens from tests.
      */
     fun sendOnboardingItems(authors: List<OnboardingItem>) {
         onboardingScreensFlow.tryEmit(authors)

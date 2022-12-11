@@ -137,7 +137,7 @@ internal fun BeerDetailsScreen(
 @Preview(uiMode = Configuration.UI_MODE_NIGHT_YES, name = "Dark theme")
 @Composable
 internal fun PhotoDetailsScreenPreview() {
-    BeerExplorerAppTheme() {
+    BeerExplorerAppTheme {
         BeerDetailsScreen(
             onNavigateUp = {},
             BeerDetailsUiState.Success(

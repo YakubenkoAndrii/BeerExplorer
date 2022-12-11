@@ -8,6 +8,10 @@ import androidx.compose.ui.Alignment
 import androidx.compose.ui.Modifier
 import androidx.compose.ui.tooling.preview.Preview
 
+/**
+ * BeerExplorer Progress bar. Part of Material - [CircularProgressIndicator] for
+ * representing loading view.
+ */
 @Composable
 fun CircularProgress() {
     Box(

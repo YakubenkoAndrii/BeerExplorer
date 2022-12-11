@@ -8,6 +8,12 @@ import androidx.compose.ui.tooling.preview.Preview
 import com.sample.project.core_ui.theme.topAppBarBackgroundColor
 import com.sample.project.core_ui.theme.topAppBarContentColor
 
+/**
+ * BeerExplorer TopAppBarDefault. Part of Material - [TopAppBar] for representing AppBar in app.
+ *
+ * @param onNavigateUp The lambda for handle navigate back.
+ * @param toolbarTitle The text content as `String`.
+ */
 @Composable
 fun TopAppBarDefault(
     onNavigateUp: () -> Unit,

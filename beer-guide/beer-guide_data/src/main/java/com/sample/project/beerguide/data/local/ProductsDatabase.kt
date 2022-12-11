@@ -11,7 +11,9 @@ import com.sample.project.beerguide.data.local.entity.BeerEntity
     version = 1,
     exportSchema = true
 )
-@TypeConverters(FoodPairingConverter::class)
+@TypeConverters(
+    FoodPairingConverter::class
+)
 abstract class ProductsDatabase : RoomDatabase() {
     abstract val productsDao: ProductsDao
 }

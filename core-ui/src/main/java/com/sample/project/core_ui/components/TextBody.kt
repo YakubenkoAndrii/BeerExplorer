@@ -9,6 +9,16 @@ import androidx.compose.ui.text.style.TextAlign
 import androidx.compose.ui.tooling.preview.Preview
 import com.sample.project.core_ui.theme.labelColor
 
+/**
+ * BeerExplorer TextBody. Part of Material - [Text] for representing text labels with default
+ * text style - `body1`. This style overrided in [com.sample.project.core_ui.theme.Typography]
+ *
+ * @param text The text label content as `String`.
+ * @param stringId The text label content as `Int`.
+ * @param formatArgs The arguments as `arrayOf`.
+ * @param textAlign The text label align representation. [TextAlign.Start] as default.
+ * @param modifier Modifier to be applied to the text.
+ */
 @Composable
 fun TextBody(
     text: String = "",

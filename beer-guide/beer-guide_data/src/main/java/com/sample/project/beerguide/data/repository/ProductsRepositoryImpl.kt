@@ -14,6 +14,10 @@ import kotlinx.coroutines.flow.flow
 import kotlinx.coroutines.flow.flowOn
 import javax.inject.Inject
 
+/**
+ * Storage implementation of the [ProductsRepository].
+ * Reads are from local storage and remote storage as well.
+ */
 class ProductsRepositoryImpl @Inject constructor(
     @Dispatcher(Dispatchers.IO) private val ioDispatcher: CoroutineDispatcher,
     private val beerService: BeerService,
